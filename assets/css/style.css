@@ -1,0 +1,28 @@
+body {
+    background-color: #EDF2F8;
+    font-family: 'Nunito', sans-serif;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+img {
+    border-radius: 3%;
+}
+
+.container-fluid {
+    background: linear-gradient(270deg, #CEBFFD, #59A1BF, #8EC9CF);
+    text-align: center;
+    color: #ffffff;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 21px;
+}
