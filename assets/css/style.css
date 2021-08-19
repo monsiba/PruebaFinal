@@ -26,3 +26,11 @@ h2 {
     font-weight: bold;
     font-size: 21px;
 }
+
+.progress-bar {
+    background-color: #484B4E;
+}
+
+.portafolio {
+    text-align: center;
+}
