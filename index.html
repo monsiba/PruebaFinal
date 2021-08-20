@@ -25,7 +25,7 @@
 <body>
 
 <!--Nav-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#">
             <img src="./assets/img/bot1.png" width="30" height="30" class="d-inline-block align-top" alt="">
@@ -37,13 +37,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">Perfil</a>
+              <a class="nav-link" href="#inicio">Perfil</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Portafolio</a>
+              <a class="nav-link" href="#portafolio">Portafolio</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
+                <a class="nav-link" href="#contacto">Contacto</a>
               </li>
           </ul>
         </div>
@@ -51,14 +51,14 @@
       </nav>
 
 <!--Perfil-->
-      <header class="container">
-        <div class="d-flex py-5">
-            <div class="row col-md-6">
-                <img src="assets/img/25-07-21.png" alt="Monserrat" class="w-50">
+      <header id="inicio">
+        <div>
+            <div>
+                <img src="assets/img/25-07-21.png" alt="Monserrat">
             </div>
-            <div class="row mt-auto">
-                <h1 class="mb-5">Perfil Profesional</h1>
-                <div class="mt-auto">
+            <div>
+                <h1>Perfil Profesional</h1>
+                <div>
                     <p>
                       Profesional capaz de desarrollar soluciones de comunicación visual en diversos medios y soportes, a través de tecnologías análogas y digitales que permiten articular soluciones de diseño. Profesional con una visión integral, capaz de abordar procesos de gestión, desarrollo y ejecución de un proyecto de diseño.
                     </p>
@@ -98,7 +98,6 @@
   </div>
 
   <div>
-
 </div>
   </div>
 </section>
@@ -107,13 +106,14 @@
 
 <!--Portafolio-->
 
-<section>
+<section id="portafolio">
   <div class="portafolio mt-5 mb-3">
   <h1>Portafolio</h1>
   <p>Conoce algunos de mis trabajos realizados</p>
 </div>
 
-<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+<!--Carrusel-->
+<div id="carouselExampleCaptions" class="carousel slide d-none d-lg-block" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -123,22 +123,19 @@
     <div class="carousel-item active" data-interval="3000">
       <img src="./assets/img/social-media.png" class="d-block w-100" alt="Social Media">
       <div class="carousel-caption d-none d-md-block">
-        <h3>Social Media</h5>
-        <p>Content creator.</p>
+        <h3>Social Media</h3>
       </div>
     </div>
     <div class="carousel-item" data-interval="3000">
       <img src="./assets/img/branding.png" class="d-block w-100" alt="Branding Strategist">
       <div class="carousel-caption d-none d-md-block">
-        <h3>Branding</h5>
-        <p>Some representative placeholder content for the second slide.</p>
+        <h3>Branding</h3>
       </div>
     </div>
     <div class="carousel-item" data-interval="3000">
       <img src="./assets/img/graphic-design.png" class="d-block w-100" alt="Graphic Designer">
       <div class="carousel-caption d-none d-md-block">
-        <h3>Graphic Design</h5>
-        <p>Some representative placeholder content for the third slide.</p>
+        <h3>Graphic Design</h3>
       </div>
     </div>
   </div>
@@ -151,18 +148,76 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+
+<!--Cards-->
+<section class="bg-lught text-dark py-5">
+  <div class="container">
+      <div class="row">
+          <div class="col-12 col-md-3 mb-4">
+              <div class="card h-100">
+                  <img src="./assets/img/branding-example.png" class="card-img-top" alt="Imagen Corporativa">
+                  <div class="card-body">
+                      <h5 class="card-title">Imagen Corporativa</h5>
+                      <p class="card-text">Creación de imagen corporativa, manual de norma y aplicaciones en diferfentes formatos.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-12 col-md-3 mb-4">
+              <div class="card h-100">
+                  <img src="./assets/img/socialmedia-example.png" class="card-img-top" alt="Social Media">
+                  <div class="card-body">
+                      <h5 class="card-title">Social Media</h5>
+                      <p class="card-text">Creación de imagenes y copy publicitario para posts orgánicos. Segmentación para anuncios pagados.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-12 col-md-3 mb-4">
+              <div class="card h-100">
+                  <img src="./assets/img/web-example.png" class="card-img-top" alt="Web">
+                  <div class="card-body">
+                      <h5 class="card-title">Diseño Web</h5>
+                      <p class="card-text">Diseño, maquetación y prototipado de sitios web responsivos.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-12 col-md-3 mb-4">
+              <div class="card h-100">
+                  <img src="./assets/img/app-example.png" class="card-img-top" alt="App">
+                  <div class="card-body">
+                      <h5 class="card-title">Diseño de Apps</h5>
+                      <p class="card-text">Diseño, maquetación y prototipado de aplicaciones móviles.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
 </section>
 
 
 <!--Contacto-->
 
-<section id="contact" class="container my-5">
+<section id="contacto" class="container my-5">
   <h2>Contáctame</h2>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A hic dolore quibusdam tempore nobis quisquam possimus? Nulla, tempore eos, natus quis voluptate libero maxime veniam provident iusto nemo facilis minima!</p>
 
   <div data-tf-widget="NtT2jvKy" style="width:100%;height:400px;color:#FFFFFF;"></div><script src="//embed.typeform.com/next/embed.js"></script>
 
 </section>
+
+<footer class="text-dark py-3">
+  <div class="container-fluid d-flex justify-content-around align-items-center">
+  <p>Monserrat Barrionuevo / G24 / Desafio Latam</p>
+
+  <ul class="list-inline">
+
+    <li data-toggle="tooltip" data-placement="top" class="list-inline-item" title="Github" aria-label="Github"><a href="https://github.com/monsiba"target="_blank"><i class="text-light fab fa-github-square fa-2x"></i></a></li>
+
+    <li data-toggle="tooltip" data-placement="top" class="list-inline-item" title="Instagram" aria-label="Instagram"><a href="https://www.instagram.com/monsi.uxui/"target="_blank"><i class="text-light fab fa-instagram-square fa-2x"></i></a></li>
+
+    <li data-toggle="tooltip" data-placement="top" class="list-inline-item" title="Linkedin" aria-label="Instagram"><a href="https://www.linkedin.com/in/monserratbarrionuevo" target="_blank"><i class="text-light fab fa-linkedin fa-2x"></i></a></li>
+</ul>
+</div>
+</footer>
 
     <!--Bundle-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
